@@ -4,6 +4,7 @@ const hbs=require('hbs')
 const utils = require('./utils')
 
 const app= express()
+const port= process.env.PORT || 3000
 
 const publicURL=path.join(__dirname,'/public')
 const viewDir=path.join(__dirname,'/tempelates/views')
@@ -71,4 +72,4 @@ app.get('*',(req,res)=>{
         error:'This page is not found'
     })
 })
-app.listen(3000)
+app.listen(port)
