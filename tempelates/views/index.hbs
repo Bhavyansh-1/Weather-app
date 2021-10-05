@@ -1,0 +1,23 @@
+<html>
+<head>
+    <link rel="icon" href="/Web-server/public/img/favicon-16x16.png"> 
+    <title>Weather</title>
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+<body>
+    <div class="main">
+        {{>header}}
+        <p>Use this site to get your weather</p>
+        <form>
+        <input type="text" placeholder="Location">
+        <button>Search</button>
+        </form>
+        <br>
+        <p id='location'></p>
+        <p id="report">Try Searching for the location</p>
+    </div>
+    {{>footer}}
+    <script src="./js/client.js"></script>
+</body>
+</html>
